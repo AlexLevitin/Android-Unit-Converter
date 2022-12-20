@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4E5051"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/WelcomeMsg"
+        android:layout_width="371dp"
+        android:layout_height="180dp"
+        android:autoText="false"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="casual"
+        android:freezesText="false"
+        android:gravity="center_horizontal|center_vertical"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        android:longClickable="false"
+        android:minHeight="48dp"
+        android:rotationX="0"
+        android:text="Android Unit Converter\nSelect Units"
+        android:textColor="#42A5F5"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/WeightButton"
+        android:layout_width="256dp"
+        android:layout_height="105dp"
+        android:backgroundTint="#0083EC"
+        android:drawableLeft="@drawable/weightlogo"
+        android:fontFamily="sans-serif-black"
+        android:text="Weight (KG - LBS)"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:iconPadding="0dp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeMsg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

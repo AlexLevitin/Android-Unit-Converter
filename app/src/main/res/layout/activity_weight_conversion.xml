@@ -52,6 +52,7 @@
         android:ems="10"
         android:hint="Enter Weight"
         android:inputType="number|numberDecimal"
+        android:backgroundTint="@color/teal_like_button"
         android:text=""
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -92,12 +93,14 @@
             android:layout_width="117dp"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
+            android:buttonTint="@color/teal_like_button"
             android:checked="true" />
         <RadioButton
             android:id="@+id/Radio_Button_LBS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
+            android:buttonTint="@color/teal_like_button"
             android:text="LBS to KG" />
 
 

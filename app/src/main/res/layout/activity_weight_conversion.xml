@@ -39,19 +39,21 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/WeightInput"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
 
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.34" />
 
     <EditText
         android:id="@+id/WeightInput"
-        android:hint="Enter Weight"
-        android:textAlignment="center"
-        android:text=""
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Enter Weight"
         android:inputType="number|numberDecimal"
+        android:text=""
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,7 +61,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.271" />
+        app:layout_constraintVertical_bias="0.59" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/ConvertWeight"
@@ -69,10 +71,37 @@
         android:text="Convert"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/WeightInput"
-        app:layout_constraintVertical_bias="0.228" />
+        app:layout_constraintVertical_bias="0.674" />
+
+    <RadioGroup
+        android:id="@+id/Radio_Group_Weight"
+        android:layout_width="244dp"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/WeightInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Res">
+
+        <RadioButton
+            android:id="@+id/Radio_Button_KG"
+            android:text="KG to LBS"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:checked="true" />
+        <RadioButton
+            android:id="@+id/Radio_Button_LBS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="LBS to KG" />
 
 
+    </RadioGroup>
+
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>

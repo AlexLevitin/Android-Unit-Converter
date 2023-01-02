@@ -50,4 +50,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/WelcomeMsg" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/DistanceButton"
+        android:layout_width="256dp"
+        android:layout_height="105dp"
+        android:backgroundTint="#0083EC"
+        android:drawableLeft="@drawable/distancelogo"
+        android:fontFamily="sans-serif-black"
+        android:text="Distance (Km - mile)"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:iconPadding="0dp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WeightButton"
+        app:layout_constraintVertical_bias="0.194" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

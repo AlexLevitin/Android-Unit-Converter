@@ -17,12 +17,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button WeightBtn;
+        Button DistanceBtn;
         WeightBtn = (Button)findViewById(R.id.WeightButton);
+        DistanceBtn = (Button)findViewById(R.id.DistanceButton);
         WeightBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent1 = new Intent(MainActivity.this, WeightConversion.class);
                 startActivity(intent1);
+            }
+        });
+        DistanceBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(MainActivity.this, DistanceConversion.class);
+                startActivity(intent2);
             }
         });
     }

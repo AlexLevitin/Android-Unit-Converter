@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4E5051"
+    tools:context=".DistanceConversion">
+
+    <TextView
+        android:id="@+id/textViewDist"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="96dp"
+        android:clickable="false"
+        android:longClickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:text="Please Enter Distance"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/ResDist"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:longClickable="false"
+        android:textColor="@color/white"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/DistanceInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDist"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <EditText
+        android:id="@+id/DistanceInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Distance"
+        android:inputType="number|numberDecimal"
+        android:backgroundTint="@color/teal_like_button"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDist"
+        app:layout_constraintVertical_bias="0.59" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ConvertDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#008EFF"
+        android:text="Convert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DistanceInput"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <RadioGroup
+        android:id="@+id/Radio_Group_Distance"
+        android:layout_width="244dp"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/DistanceInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResDist">
+
+        <RadioButton
+            android:id="@+id/Radio_Button_KM"
+            android:text="KM to Miles"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:buttonTint="@color/teal_like_button"
+            android:checked="true" />
+        <RadioButton
+            android:id="@+id/Radio_Button_Miles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:buttonTint="@color/teal_like_button"
+            android:text="Miles to KM" />
+
+
+    </RadioGroup>
+
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

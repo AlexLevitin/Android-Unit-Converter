@@ -42,8 +42,8 @@ public class DistanceConversion extends AppCompatActivity {
                 int checkedId = radioGroup.getCheckedRadioButtonId();
                 String input = inputDistance.getText().toString();
                 if(input.equals("")) {
-                    inputDistance.setError("Please Enter Weight");
-                    Toast.makeText(DistanceConversion.this, "Please Enter Weight", Toast.LENGTH_SHORT).show();
+                    inputDistance.setError("Please Enter Distance");
+                    Toast.makeText(DistanceConversion.this, "Please Enter Distance", Toast.LENGTH_SHORT).show();
                     viewRes.setText("");
                 }
                 else if(checkedId == radioKM.getId())

@@ -1,3 +1,4 @@
 # Android Unit Converter
+This is my first android project (self taught)<br/>
 Android application that converts different types of measurement units <br />
-This is my first android project (self taught)
+The application can convert untis of weight distance and length

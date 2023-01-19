@@ -18,8 +18,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button WeightBtn;
         Button DistanceBtn;
+        Button LenghtBtn;
         WeightBtn = (Button)findViewById(R.id.WeightButton);
         DistanceBtn = (Button)findViewById(R.id.DistanceButton);
+        LenghtBtn = (Button)findViewById(R.id.LengtheButton);
         WeightBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Button LenghtBtn;
         WeightBtn = (Button)findViewById(R.id.WeightButton);
         DistanceBtn = (Button)findViewById(R.id.DistanceButton);
-        LenghtBtn = (Button)findViewById(R.id.LengtheButton);
+        LenghtBtn = (Button)findViewById(R.id.LengthButton);
         WeightBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent2 = new Intent(MainActivity.this, DistanceConversion.class);
                 startActivity(intent2);
+            }
+        });
+        LenghtBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent3 = new Intent(MainActivity.this, LengthConversion.class);
+                startActivity(intent3);
             }
         });
     }

@@ -54,6 +54,21 @@ public class LengthConversion extends AppCompatActivity {
         ToSpinner.setAdapter(aa);
         setMyMap(myMap);
 
+        AdapterView.OnItemSelectedListener listener = new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                ((TextView) parent.getChildAt(0)).setTextColor(0xffffffff);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        };
+
+        FromSpinner.setOnItemSelectedListener(listener);
+        ToSpinner.setOnItemSelectedListener(listener);
+
         convertLength.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

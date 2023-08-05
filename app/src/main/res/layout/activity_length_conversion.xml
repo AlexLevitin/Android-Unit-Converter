@@ -65,6 +65,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/ConvertLength"
+        android:background="@drawable/roundstyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#008EFF"
@@ -78,6 +79,7 @@
 
     <Spinner
         android:id="@+id/SpinnerFrom"
+        android:background="@drawable/stylespinner"
         android:layout_width="100dp"
         android:layout_height="51dp"
         android:layout_marginTop="257dp"
@@ -92,6 +94,7 @@
 
     <Spinner
         android:id="@+id/SpinnerTo"
+        android:background="@drawable/stylespinner"
         android:layout_width="100dp"
         android:layout_height="51dp"
         android:layout_marginTop="256dp"

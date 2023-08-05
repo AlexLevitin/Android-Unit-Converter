@@ -49,7 +49,7 @@ public class LengthConversion extends AppCompatActivity {
         ToSpinner = (Spinner)findViewById(R.id.SpinnerTo);
         //set array adapter for spinner
         ArrayAdapter aa = new ArrayAdapter(this,android.R.layout.simple_spinner_item,FromString);
-        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        aa.setDropDownViewResource(R.layout.dropdownstyle);
         FromSpinner.setAdapter(aa);
         ToSpinner.setAdapter(aa);
         setMyMap(myMap);
